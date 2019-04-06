@@ -8,6 +8,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.alura.prototipounigrade.R;
+
 
 /**
  * A simple {@link Fragment} subclass.
@@ -67,6 +69,7 @@ public class ChooseSubjectFragment extends Fragment {
         ((MainActivity) getActivity()).getSupportActionBar().setTitle("Escolha a matéria");
 
         // Inflate the layout for this fragment
+        //R.layout.fragment_choose_subject
         return inflater.inflate(R.layout.fragment_choose_subject, container, false);
     }
 

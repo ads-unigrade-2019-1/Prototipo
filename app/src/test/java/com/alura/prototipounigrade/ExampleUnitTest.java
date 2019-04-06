@@ -1,4 +1,4 @@
-package com.example.prototipounigrade;
+package com.alura.prototipounigrade;
 
 import org.junit.Test;
 
