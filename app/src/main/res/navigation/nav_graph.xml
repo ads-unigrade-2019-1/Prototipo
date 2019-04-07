@@ -8,6 +8,5 @@
     <fragment
         android:id="@+id/chooseSubjectFragment"
         android:name="com.example.prototipounigrade.ChooseSubjectFragment"
-        android:label="fragment_choose_subject"
-        tools:layout="@layout/fragment_choose_subject" />
+        android:label="fragment_choose_subject" />
 </navigation>
