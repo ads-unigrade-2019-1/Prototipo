@@ -1,4 +1,4 @@
-package com.alura.prototipounigrade;
+package com.example.prototipounigrade;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getTargetContext();
 
-        assertEquals("com.alura.prototipounigrade", appContext.getPackageName());
+        assertEquals("com.example.prototipounigrade", appContext.getPackageName());
     }
 }

@@ -8,7 +8,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.alura.prototipounigrade.R;
+import com.example.prototipounigrade.R;
 
 
 /**
