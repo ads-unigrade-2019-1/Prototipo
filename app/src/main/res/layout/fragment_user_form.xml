@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#fff"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="43dp"
+        android:paddingTop="30dp"
+        android:paddingBottom="30dp"
+        android:textColor="#fff"
+        app:fontFamily="casual"
+        android:gravity="center"
+        android:textStyle=""
+        android:background="@color/colorPrimaryDark"
+        android:text="Seja bem-vindo!"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="25dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:fontFamily="casual"
+        android:background="#ffffff"
+        android:gravity="center"
+        android:paddingTop="20dp"
+        android:paddingBottom="50dp"
+        android:text="Para começar, insira o seu campus e curso"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="normal"
+        android:textColor="@color/colorPrimaryDark"
+        android:fontFamily="casual"
+        android:text="Campus"
+        android:layout_marginLeft="10dp"
+        android:textSize="17sp"/>
+    <Spinner
+        android:id="@+id/campusSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="50sp"
+        android:popupBackground="#fff"
+        android:background="@color/colorAccent"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp">
+    </Spinner>
+
+    <TextView
+        android:layout_marginTop="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="normal"
+        android:textColor="@color/colorPrimaryDark"
+        android:fontFamily="casual"
+        android:text="Curso"
+        android:layout_marginLeft="10dp"
+        android:textSize="17sp"/>
+    <Spinner
+        android:id="@+id/courseSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="50sp"
+        android:popupBackground="#fff"
+        android:background="@color/colorAccent"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp">
+    </Spinner>
+
+</LinearLayout>

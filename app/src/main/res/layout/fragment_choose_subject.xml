@@ -6,7 +6,6 @@
     android:orientation="vertical"
     tools:context="com.example.prototipounigrade.MainActivity">
 
-
     <ListView
         android:id="@+id/subjects_list"
         android:layout_width="match_parent"

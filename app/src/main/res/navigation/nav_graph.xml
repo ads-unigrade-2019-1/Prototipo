@@ -1,12 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/chooseSubjectFragment">
+    app:startDestination="@id/userFormFragment">
 
     <fragment
         android:id="@+id/chooseSubjectFragment"
         android:name="com.example.prototipounigrade.ChooseSubjectFragment"
         android:label="fragment_choose_subject" />
+    <fragment
+        android:id="@+id/userFormFragment"
+        android:name="com.example.prototipounigrade.UserForm"
+        android:label="fragment_user_form">
+        <action
+            android:id="@+id/action_userFormFragment_to_chooseSubjectFragment"
+            app:destination="@id/chooseSubjectFragment" />
+    </fragment>
 </navigation>
