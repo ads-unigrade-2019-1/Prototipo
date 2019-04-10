@@ -11,4 +11,7 @@
         <item>2983748 - Compiladores</item>
         <item>2343847 - Estrutura de Dados</item>
     </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
