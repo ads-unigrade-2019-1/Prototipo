@@ -78,12 +78,9 @@ public class MainFragment extends Fragment {
         final View view = inflater.inflate(R.layout.fragment_main, container, false);
 
         ((MainActivity) getActivity()).getSupportActionBar().setTitle("Escolha a matéria");
-//        BottomNavigationView bottomNavigationView = view.findViewById(R.id.bottom_nav);
-//        bottomNavigationView.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
-//
-//        //fm.beginTransaction().add(R.id.main_container, fragment3, "3").hide(fragment3).commit();
-//        //fm.beginTransaction().add(R.id.main_container, fragment2, "2").hide(fragment2).commit();
-//        fm.beginTransaction().add(R.id.main_container,fragment1, "1").commit();
+
+        BottomNavigationView bottomNavigationView =  view.findViewById(R.id.bottom_nav);
+        bottomNavigationView.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
 
 
 
@@ -91,6 +88,31 @@ public class MainFragment extends Fragment {
         // Inflate the layout for this fragment
         return view;
     }
+
+    private BottomNavigationView.OnNavigationItemSelectedListener mOnNavigationItemSelectedListener
+            = new BottomNavigationView.OnNavigationItemSelectedListener() {
+
+        @Override
+        public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+            FragmentManager fragmentManager = getActivity().getSupportFragmentManager();
+            FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+
+            switch (item.getItemId()) {
+                case R.id.materias_item:
+                    fragmentTransaction.replace(R.id.main_container, new ChooseSubjectFragment()).commit();
+                    return true;
+                case R.id.grades_item:
+
+
+                    return true;
+                case R.id.fluxo_item:
+
+                    return true;
+            }
+            return false;
+        }
+
+    };
 
     // TODO: Rename method, update argument and hook method into UI event
     public void onButtonPressed(Uri uri) {
