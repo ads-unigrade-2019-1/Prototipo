@@ -3,26 +3,26 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <item
-        android:id="@+id/salas_item"
+        android:id="@+id/grades_item"
         android:enabled="true"
         android:icon="@drawable/ic_launcher_foreground"
         android:title="Grades"
         app:showAsAction="never" />
     <item
-        android:id="@+id/usuario_item"
+        android:id="@+id/materias_item"
         android:enabled="true"
         android:icon="@drawable/ic_launcher_foreground"
         android:title="Matérias"
         app:showAsAction="never" />
 
     <item
-        android:id="@+id/about_item"
+        android:id="@+id/fluxo_item"
         android:enabled="true"
         android:icon="@drawable/ic_launcher_foreground"
         android:title="Fluxo"
         app:showAsAction="never" />
     <item
-        android:id="@+id/avaliacao_item"
+        android:id="@+id/configuracoes_item"
         android:enabled="true"
         android:icon="@drawable/ic_launcher_foreground"
         android:title="Configurações"

@@ -12,7 +12,9 @@ import android.view.MenuItem;
 import com.example.prototipounigrade.R;
 
 public class MainActivity extends AppCompatActivity
-        implements ChooseSubjectFragment.OnFragmentInteractionListener, ChooseCourseFragment.OnFragmentInteractionListener{
+        implements ChooseSubjectFragment.OnFragmentInteractionListener,
+                    ChooseCourseFragment.OnFragmentInteractionListener,
+                    MainFragment.OnFragmentInteractionListener{
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
