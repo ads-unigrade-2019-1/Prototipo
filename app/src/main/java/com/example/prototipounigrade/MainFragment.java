@@ -102,12 +102,13 @@ public class MainFragment extends Fragment {
                     fragmentTransaction.replace(R.id.main_container, new ChooseSubjectFragment()).commit();
                     return true;
                 case R.id.grades_item:
-
-
+                    fragmentTransaction.replace(R.id.main_container, new TimetableFragment()).commit();
                     return true;
                 case R.id.fluxo_item:
-
+                    fragmentTransaction.replace(R.id.main_container, new FlowFragment()).commit();
                     return true;
+                case R.id.configuracoes_item:
+                    fragmentTransaction.replace(R.id.main_container, new SettingsFragment()).commit();
             }
             return false;
         }
