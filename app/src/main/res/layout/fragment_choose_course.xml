@@ -44,7 +44,7 @@
         android:layout_marginRight="30sp"
         android:layout_marginLeft="30sp"
         android:background="#0F3A8F3B"
-        android:entries="@array/campus"/>
+        android:entries="@array/courses_array"/>
 
     <Button
         android:layout_width="wrap_content"
