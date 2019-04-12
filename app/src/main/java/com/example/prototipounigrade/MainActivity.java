@@ -17,7 +17,8 @@ public class MainActivity extends AppCompatActivity
                     MainFragment.OnFragmentInteractionListener,
                     FlowFragment.OnFragmentInteractionListener,
                     SettingsFragment.OnFragmentInteractionListener,
-                    TimetableFragment.OnFragmentInteractionListener{
+                    TimetableFragment.OnFragmentInteractionListener,
+                    ChooseClassFragment.OnFragmentInteractionListener{
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

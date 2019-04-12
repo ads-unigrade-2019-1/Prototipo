@@ -16,3 +16,12 @@
 .idea/misc.xml
 **/.gradle/
 .gradle
+.gradle/4.10.1/fileHashes/fileHashes.bin
+.gradle/4.10.1/fileHashes/fileHashes.lock
+.gradle/4.10.1/javaCompile/classAnalysis.bin
+.gradle/4.10.1/javaCompile/javaCompile.lock
+.gradle/4.10.1/taskHistory/taskHistory.bin
+.gradle/4.10.1/taskHistory/taskHistory.lock
+.gradle/buildOutputCleanup/buildOutputCleanup.lock
+.gradle/buildOutputCleanup/outputFiles.bin
+.idea/misc.xml

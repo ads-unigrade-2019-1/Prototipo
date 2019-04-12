@@ -4,9 +4,13 @@ import android.content.Context;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentTransaction;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
+import android.widget.ListView;
+import com.example.prototipounigrade.ChooseClassFragment;
 
 import com.example.prototipounigrade.R;
 
@@ -67,10 +71,32 @@ public class ChooseSubjectFragment extends Fragment {
                              Bundle savedInstanceState) {
 
         ((MainActivity) getActivity()).getSupportActionBar().setTitle("Escolha a matéria");
-
         // Inflate the layout for this fragment
         //R.layout.fragment_choose_subject
-        return inflater.inflate(R.layout.fragment_choose_subject, container, false);
+        View v = inflater.inflate(R.layout.fragment_choose_subject, container, false);
+
+        ListView subjectList = v.findViewById(R.id.subjects_list);
+        subjectList.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                ChooseClassFragment classFragment = new ChooseClassFragment();
+
+                FragmentTransaction transaction = getActivity().getSupportFragmentManager().beginTransaction();
+                transaction.replace(R.id.main_container, classFragment);
+                transaction.addToBackStack(null);
+                transaction.commit();
+                /*
+                GameSettingsFragment newGamefragment = new GameSettingsFragment();
+                FragmentTransaction fragmentTransaction = getActivity().getSupportFragmentManager().beginTransaction();
+                fragmentTransaction.replace(R.id.placeholder, newGamefragment);
+                fragmentTransaction.addToBackStack(null);
+                fragmentTransaction.commit();
+                */
+            }
+
+        });
+
+        return v;
     }
 
     // TODO: Rename method, update argument and hook method into UI event
