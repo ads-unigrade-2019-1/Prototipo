@@ -26,21 +26,21 @@ public class ClassListAdapter extends BaseAdapter {
         inflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
 
         classItem = new HashMap<>();
-        classItem.put("code", "12345");
+        classItem.put("code", "A");
         classItem.put("teacher", "Mauricio");
         classItem.put("time", "12:00");
         classItem.put("campus", "Darcy");
         classes.add(classItem);
 
         classItem = new HashMap<>();
-        classItem.put("code", "987654");
+        classItem.put("code", "B");
         classItem.put("teacher", "Milene");
         classItem.put("time", "10:00");
         classItem.put("campus", "FGA");
         classes.add(classItem);
 
         classItem = new HashMap<>();
-        classItem.put("code", "454685");
+        classItem.put("code", "C");
         classItem.put("teacher", "Vandor");
         classItem.put("time", "08:00");
         classItem.put("campus", "Ceilândia");
