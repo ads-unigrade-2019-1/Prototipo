@@ -11,15 +11,37 @@
         android:label="fragment_choose_course"
         tools:layout="@layout/fragment_choose_course" >
         <action
-            android:id="@+id/action_chooseCourseFragment_to_mainFragment"
-            app:destination="@id/mainFragment" />
+            android:id="@+id/action_chooseCourseFragment_to_chooseSubjectFragment2"
+            app:destination="@id/chooseSubjectFragment" />
     </fragment>
-
     <fragment
-        android:id="@+id/mainFragment"
-        android:name="com.example.prototipounigrade.MainFragment"
-        android:label="fragment_main"
-        tools:layout="@layout/fragment_main" />
+        android:id="@+id/chooseSubjectFragment"
+        android:name="com.example.prototipounigrade.ChooseSubjectFragment"
+        android:label="fragment_choose_subject"
+        tools:layout="@layout/fragment_choose_subject" >
+        <action
+            android:id="@+id/action_chooseSubjectFragment_to_chooseClassFragment"
+            app:destination="@id/chooseClassFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/flowFragment"
+        android:name="com.example.prototipounigrade.FlowFragment"
+        android:label="fragment_flow"
+        tools:layout="@layout/fragment_flow" />
+    <fragment
+        android:id="@+id/timetableFragment"
+        android:name="com.example.prototipounigrade.TimetableFragment"
+        android:label="fragment_timetable"
+        tools:layout="@layout/fragment_timetable" />
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.example.prototipounigrade.SettingsFragment"
+        android:label="fragment_settings"
+        tools:layout="@layout/fragment_settings" />
+    <fragment
+        android:id="@+id/chooseClassFragment"
+        android:name="com.example.prototipounigrade.ChooseClassFragment"
+        android:label="ChooseClassFragment" />
 
 
 </navigation>

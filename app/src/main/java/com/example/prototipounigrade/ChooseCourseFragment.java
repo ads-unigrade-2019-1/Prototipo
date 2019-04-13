@@ -73,7 +73,7 @@ public class ChooseCourseFragment extends Fragment {
 
         final Button button = view.findViewById(R.id.btn_continue);
         button.setOnClickListener(
-                Navigation.createNavigateOnClickListener(R.id.mainFragment, null)
+                Navigation.createNavigateOnClickListener(R.id.chooseSubjectFragment, null)
         );
 
         // Inflate the layout for this fragment
