@@ -28,7 +28,7 @@ public class MainActivity extends AppCompatActivity
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        Toolbar toolbar = findViewById(R.id.toolbar);
+        final Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
         final BottomNavigationView bottomNavigationView = findViewById(R.id.bottom_nav);
@@ -43,11 +43,15 @@ public class MainActivity extends AppCompatActivity
             @Override
             public void onDestinationChanged(@NonNull NavController controller,
                                              @NonNull NavDestination destination, @Nullable Bundle arguments) {
-                int id = destination.getId();
-                if(id == R.id.courseFragment || id == R.id.classesFragment) {
+
+                if(destination.getId() == R.id.courseFragment){
+                    bottomNavigationView.setVisibility(View.GONE);
+                    toolbar.setVisibility(View.GONE);
+                } else if (destination.getId() == R.id.classesFragment) {
                     bottomNavigationView.setVisibility(View.GONE);
                 } else {
                     bottomNavigationView.setVisibility(View.VISIBLE);
+                    toolbar.setVisibility(View.VISIBLE);
                 }
             }
         });
