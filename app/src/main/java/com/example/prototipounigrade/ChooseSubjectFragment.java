@@ -14,6 +14,8 @@ import com.example.prototipounigrade.ChooseClassFragment;
 
 import com.example.prototipounigrade.R;
 
+import androidx.navigation.Navigation;
+
 
 /**
  * A simple {@link Fragment} subclass.
@@ -79,19 +81,9 @@ public class ChooseSubjectFragment extends Fragment {
         subjectList.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                ChooseClassFragment classFragment = new ChooseClassFragment();
 
-                FragmentTransaction transaction = getActivity().getSupportFragmentManager().beginTransaction();
-                transaction.replace(R.id.main_container, classFragment);
-                transaction.addToBackStack(null);
-                transaction.commit();
-                /*
-                GameSettingsFragment newGamefragment = new GameSettingsFragment();
-                FragmentTransaction fragmentTransaction = getActivity().getSupportFragmentManager().beginTransaction();
-                fragmentTransaction.replace(R.id.placeholder, newGamefragment);
-                fragmentTransaction.addToBackStack(null);
-                fragmentTransaction.commit();
-                */
+                Navigation.createNavigateOnClickListener(R.id.chooseClassFragment, null);
+
             }
 
         });
