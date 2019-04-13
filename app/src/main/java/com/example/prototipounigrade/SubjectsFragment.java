@@ -78,7 +78,7 @@ public class SubjectsFragment extends Fragment {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
 
-                Navigation.createNavigateOnClickListener(R.id.classesFragment, null);
+                Navigation.findNavController(view).navigate(R.id.classesFragment);
 
             }
 
