@@ -30,6 +30,7 @@ public class ClassListAdapter extends BaseAdapter {
         classItem.put("teacher", "Mauricio");
         classItem.put("time", "12:00");
         classItem.put("campus", "Darcy");
+        classItem.put("check", false);
         classes.add(classItem);
 
         classItem = new HashMap<>();
@@ -37,6 +38,7 @@ public class ClassListAdapter extends BaseAdapter {
         classItem.put("teacher", "Milene");
         classItem.put("time", "10:00");
         classItem.put("campus", "FGA");
+        classItem.put("check", false);
         classes.add(classItem);
 
         classItem = new HashMap<>();
@@ -44,6 +46,7 @@ public class ClassListAdapter extends BaseAdapter {
         classItem.put("teacher", "Vandor");
         classItem.put("time", "08:00");
         classItem.put("campus", "Ceilândia");
+        classItem.put("check", false);
         classes.add(classItem);
 
 
@@ -94,11 +97,25 @@ public class ClassListAdapter extends BaseAdapter {
         viewHolder.classCode = view.findViewById(R.id.classCodeItem);
         viewHolder.classTeacher = view.findViewById(R.id.classTeacherItem);
         viewHolder.classTime = view.findViewById(R.id.classTimeItem);
+        viewHolder.checkbox = view.findViewById(R.id.checkbox);
 
         viewHolder.classCode.setText((String)classItem.get("code"));
         viewHolder.classTeacher.setText((String)classItem.get("teacher"));
         viewHolder.classCampus.setText((String)classItem.get("campus"));
         viewHolder.classTime.setText((String)classItem.get("time"));
+
+        viewHolder.checkbox.setChecked((Boolean) classItem.get("check"));
+        viewHolder.checkbox.setTag(classItem);
+
+        viewHolder.checkbox.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                CheckBox c = (CheckBox) v;
+
+                HashMap classItem = (HashMap) v.getTag();
+                classItem.put("check", c.isChecked());
+            }
+        });
 
         /*
         HashMap item = (HashMap) getItem(position);

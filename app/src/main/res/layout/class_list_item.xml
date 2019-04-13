@@ -18,9 +18,6 @@ android:layout_gravity="top" >
         android:layout_height="45dp"
         android:layout_marginStart="10dp"
         android:layout_marginLeft="10dp"
-        android:checked="true"
-        android:focusable="false"
-        android:clickable="false"
         android:id="@+id/checkbox" />
     <TextView
         android:id="@+id/classCodeItem"
