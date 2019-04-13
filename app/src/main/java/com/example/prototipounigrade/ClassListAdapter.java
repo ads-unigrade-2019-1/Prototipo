@@ -117,33 +117,6 @@ public class ClassListAdapter extends BaseAdapter {
             }
         });
 
-        /*
-        HashMap item = (HashMap) getItem(position);
-        v = convertView;
-
-        if (convertView == null){
-            v = inflater.inflate(R.layout.class_list_item, null);
-            viewHolder = new ViewHolder();
-
-            viewHolder.checkbox = v.findViewById(R.id.checkbox);
-            viewHolder.classCode = v.findViewById(R.id.classCodeItem);
-            viewHolder.classTeacher = v.findViewById(R.id.classTeacherItem);
-            viewHolder.classTime = v.findViewById(R.id.classTimeItem);
-
-            viewHolder.classCampus = v.findViewById(R.id.classCampusItem);
-            v.setTag(viewHolder);
-        }
-
-        viewHolder = (ViewHolder) v.getTag();
-
-        viewHolder.classCode.setText((String)item.get("code"));
-        viewHolder.classTeacher.setText((String)item.get("teacher"));
-        viewHolder.classCampus.setText((String)item.get("campus"));
-        viewHolder.classTime.setText((String)item.get("time"));
-        viewHolder.checkbox.setText((String)item.get("checkbox"));
-
-        return null;
-        */
         return view;
     }
 

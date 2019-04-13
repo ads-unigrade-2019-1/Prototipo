@@ -26,14 +26,16 @@ android:layout_gravity="top" >
         android:layout_marginEnd="10dp"
         android:layout_marginRight="10dp"
         android:textColor="#000"
-        android:textSize="20sp" />
+        android:textSize="20sp"
+        android:text="AA"/>
 
     <TextView
         android:id="@+id/classTeacherItem"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textColor="#000"
-        android:textSize="15sp" />
+        android:textSize="15sp"
+        android:text="Maurício Serrano"/>
 
 </LinearLayout>
 
@@ -45,16 +47,17 @@ android:layout_gravity="top" >
     android:layout_marginStart="95dp"
     android:layout_marginLeft="95dp"
     android:textColor="#000"
-    android:textSize="15sp" />
+    android:textSize="15sp"
+    android:text="Darcy Ribeiro"/>
 
 <TextView
     android:id="@+id/classTimeItem"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_marginStart="130dp"
-    android:layout_marginLeft="130dp"
+    android:layout_marginStart="95dp"
+    android:layout_marginLeft="95dp"
     android:layout_marginTop="5dp"
-    android:text="Horariooooooooooo"
+    android:text="12:00 - 14:00"
     android:textColor="#000"
     android:textSize="15sp" />
 
