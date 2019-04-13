@@ -7,20 +7,17 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
-
-import androidx.navigation.Navigation;
 
 
 /**
  * A simple {@link Fragment} subclass.
  * Activities that contain this fragment must implement the
- * {@link ChooseCourseFragment.OnFragmentInteractionListener} interface
+ * {@link UserSubjectsFragment.OnFragmentInteractionListener} interface
  * to handle interaction events.
- * Use the {@link ChooseCourseFragment#newInstance} factory method to
+ * Use the {@link UserSubjectsFragment#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class ChooseCourseFragment extends Fragment {
+public class UserSubjectsFragment extends Fragment {
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     private static final String ARG_PARAM1 = "param1";
@@ -32,7 +29,7 @@ public class ChooseCourseFragment extends Fragment {
 
     private OnFragmentInteractionListener mListener;
 
-    public ChooseCourseFragment() {
+    public UserSubjectsFragment() {
         // Required empty public constructor
     }
 
@@ -42,11 +39,11 @@ public class ChooseCourseFragment extends Fragment {
      *
      * @param param1 Parameter 1.
      * @param param2 Parameter 2.
-     * @return A new instance of fragment ChooseCourseFragment.
+     * @return A new instance of fragment UserSubjectsFragment.
      */
     // TODO: Rename and change types and number of parameters
-    public static ChooseCourseFragment newInstance(String param1, String param2) {
-        ChooseCourseFragment fragment = new ChooseCourseFragment();
+    public static UserSubjectsFragment newInstance(String param1, String param2) {
+        UserSubjectsFragment fragment = new UserSubjectsFragment();
         Bundle args = new Bundle();
         args.putString(ARG_PARAM1, param1);
         args.putString(ARG_PARAM2, param2);
@@ -66,18 +63,8 @@ public class ChooseCourseFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-
-        final View view = inflater.inflate(R.layout.fragment_choose_course, container, false);
-
-        ((MainActivity) getActivity()).getSupportActionBar().setTitle("Escolha campus e curso");
-
-        final Button button = view.findViewById(R.id.btn_continue);
-        button.setOnClickListener(
-                Navigation.createNavigateOnClickListener(R.id.chooseSubjectFragment, null)
-        );
-
         // Inflate the layout for this fragment
-        return view;
+        return inflater.inflate(R.layout.fragment_user_subjects, container, false);
     }
 
     // TODO: Rename method, update argument and hook method into UI event

@@ -4,15 +4,10 @@ import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.design.widget.BottomNavigationView;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
-import android.view.Menu;
 import android.view.MenuItem;
-
-import com.example.prototipounigrade.R;
 
 import androidx.navigation.NavController;
 import androidx.navigation.NavDestination;
@@ -20,12 +15,12 @@ import androidx.navigation.fragment.NavHostFragment;
 import androidx.navigation.ui.NavigationUI;
 
 public class MainActivity extends AppCompatActivity
-        implements  ChooseSubjectFragment.OnFragmentInteractionListener,
-                    ChooseCourseFragment.OnFragmentInteractionListener,
+        implements  SubjectsFragment.OnFragmentInteractionListener,
+                    CourseFragment.OnFragmentInteractionListener,
                     FlowFragment.OnFragmentInteractionListener,
-                    SettingsFragment.OnFragmentInteractionListener,
-                    TimetableFragment.OnFragmentInteractionListener,
-                    ChooseClassFragment.OnFragmentInteractionListener{
+                    UserSubjectsFragment.OnFragmentInteractionListener,
+                    TimetablesFragment.OnFragmentInteractionListener,
+                    ClassesFragment.OnFragmentInteractionListener{
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -46,7 +41,7 @@ public class MainActivity extends AppCompatActivity
             @Override
             public void onDestinationChanged(@NonNull NavController controller,
                                              @NonNull NavDestination destination, @Nullable Bundle arguments) {
-                if(destination.getId() == R.id.chooseCourseFragment) {
+                if(destination.getId() == R.id.courseFragment) {
                     bottomNavigationView.setVisibility(View.GONE);
                 } else {
                     bottomNavigationView.setVisibility(View.VISIBLE);

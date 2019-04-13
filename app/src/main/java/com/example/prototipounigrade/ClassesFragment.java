@@ -14,12 +14,12 @@ import android.widget.ListView;
 /**
  * A simple {@link Fragment} subclass.
  * Activities that contain this fragment must implement the
- * {@link ChooseClassFragment.OnFragmentInteractionListener} interface
+ * {@link ClassesFragment.OnFragmentInteractionListener} interface
  * to handle interaction events.
- * Use the {@link ChooseClassFragment#newInstance} factory method to
+ * Use the {@link ClassesFragment#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class ChooseClassFragment extends Fragment {
+public class ClassesFragment extends Fragment {
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     private static final String ARG_PARAM1 = "param1";
@@ -33,7 +33,7 @@ public class ChooseClassFragment extends Fragment {
 
     private OnFragmentInteractionListener mListener;
 
-    public ChooseClassFragment() {
+    public ClassesFragment() {
         // Required empty public constructor
     }
 
@@ -43,11 +43,11 @@ public class ChooseClassFragment extends Fragment {
      *
      * @param param1 Parameter 1.
      * @param param2 Parameter 2.
-     * @return A new instance of fragment ChooseClassFragment.
+     * @return A new instance of fragment ClassesFragment.
      */
     // TODO: Rename and change types and number of parameters
-    public static ChooseClassFragment newInstance(String param1, String param2) {
-        ChooseClassFragment fragment = new ChooseClassFragment();
+    public static ClassesFragment newInstance(String param1, String param2) {
+        ClassesFragment fragment = new ClassesFragment();
         Bundle args = new Bundle();
         args.putString(ARG_PARAM1, param1);
         args.putString(ARG_PARAM2, param2);
@@ -68,7 +68,7 @@ public class ChooseClassFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
 
-        View v = inflater.inflate(R.layout.fragment_choose_class, container, false);
+        View v = inflater.inflate(R.layout.fragment_classes, container, false);
         ListView list = v.findViewById(R.id.class_list);
         adapter = new ClassListAdapter(getActivity());
         list.setAdapter(adapter);
